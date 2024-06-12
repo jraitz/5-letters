@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Letters!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header-row">
+        <div>
+            <button id="restartButton" onclick="resetGame()">Restart</button>
+            <button id="giveUpButton" onclick="giveUp()">Give Up</button>
+        </div>
+        <h1>Five Letters</h1>
+        <div id="difficultySelection">
+            <button id="easyButton" class="difficultyButton selected">Easy</button>
+            <button id="mediumButton" class="difficultyButton">Medium</button>
+            <button id="hardButton" class="difficultyButton">Hard</button>
+        </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="letters" class="container">
+            <button id="a" class="letter default">A</button>
+            <button id="b" class="letter default">B</button>
+            <button id="c" class="letter default">C</button>
+            <button id="d" class="letter default">D</button>
+            <button id="e" class="letter default">E</button>
+            <button id="f" class="letter default">F</button>
+            <button id="g" class="letter default">G</button>
+            <button id="h" class="letter default">H</button>
+            <button id="i" class="letter default">I</button>
+            <button id="j" class="letter default">J</button>
+            <button id="k" class="letter default">K</button>
+            <button id="l" class="letter default">L</button>
+            <button id="m" class="letter default">M</button>
+            <button id="n" class="letter default">N</button>
+            <button id="o" class="letter default">O</button>
+            <button id="p" class="letter default">P</button>
+            <button id="q" class="letter default">Q</button>
+            <button id="r" class="letter default">R</button>
+            <button id="s" class="letter default">S</button>
+            <button id="t" class="letter default">T</button>
+            <button id="u" class="letter default">U</button>
+            <button id="v" class="letter default">V</button>
+            <button id="w" class="letter default">W</button>
+            <button id="x" class="letter default">X</button>
+            <button id="y" class="letter default">Y</button>
+            <button id="z" class="letter default">Z</button>
+        
+        </div>
+        <div class="container">
+            <p>Guess the 5-letter word!</p>
+            <input type="text" id="guessInput" maxlength="5" pattern="[a-zA-Z]*">
+            <button id="guessButton" onclick="makeGuess()">Guess</button>
+            <div id="feedback"></div>
+        </div>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Guess</th>
+                        <th>Letters</th>
+                        <th>Positions</th>
+                    </tr>
+                </thead>
+                <tbody id="guesses">
+                </tbody>
+            </table>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
