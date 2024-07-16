@@ -118,6 +118,9 @@ button.letter:hover:disabled{
 #guesses {
     margin-top: 20px;
     text-align: center;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: monospace;
 }
 button.selected {
     border: 2px solid blue;
